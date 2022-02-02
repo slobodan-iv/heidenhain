@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Merriweather|Tangerine|Caveat" rel="stylesheet">
+    <!-- Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Почетна страна!</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="Pictures/logo3.png" width="90" height="60" class="d-inline-block align-top rounded" alt="M3Design"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Правоугле координате</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Поларне координате</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Обрада џепа</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Задаци</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                Повезани Web site-ови
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/haas/">Управљачка јединица: HAAS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://slobodan-iv.github.io/operate/">Управљачка јединица: Sinumerik Operate Turn</a>
+                </li>
+                <li>
+                  <a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true">CNC програмирање</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><!-- navbar -->
+    <!-- container -->
+    <div class="container">
+      <!-- Content here -->
+      <div>
+        <h1>Кретање са Картезијевим координатама</h1>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-12 col-md-11 col-lg-10">
+            <div class="accordion" id="cartesian_coordinates">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="linear_movement_and_chf">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_linear_movement_and_chf" aria-expanded="true" aria-controls="collapse_linear_movement_and_chf">
+                    Линеарно кретање са обарањем ивица
+                  </button>
+                </h2>
+                <div id="collapse_linear_movement_and_chf" class="accordion-collapse collapse show" aria-labelledby="linear_movement_and_chf" data-bs-parent="#cartesian_coordinates">
+                  <div class="accordion-body">
+                    <ul class="nav nav-tabs" id="linear_movement_and_chf_tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="zadatak_chf-tab" data-bs-toggle="tab" data-bs-target="#zadatak_chf" type="button" role="tab" aria-controls="zadatak_chf" aria-selected="true">Задатак</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="crtez_zadatka_chf-tab" data-bs-toggle="tab" data-bs-target="#crtez_zadatka_chf" type="button" role="tab" aria-controls="crtez_zadatka_chf" aria-selected="true">Цртеж</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="simulacija_zadatka_chf-tab" data-bs-toggle="tab" data-bs-target="#simulacija_zadatka_chf" type="button" role="tab" aria-controls="simulacija_zadatka_chf" aria-selected="true">Симулација програма</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="linear_movement_and_chf_TabContent">
+                      <div class="tab-pane show active" id="zadatak_chf" role="tabpanel" aria-labelledby="zadatak_chf-tab">
+                        <img src="Pictures/Linearno_kretanje_ch_Cartesian.jpg" width="100%" alt="Поставка задатка">
+                      </div>
+                      <div class="tab-pane" id="crtez_zadatka_chf" role="tabpanel" aria-labelledby="crtez_zadatka_chf-tab">
+                        <img src="Pictures/Crtezi/Obrada_konture_sa_pravouglim_koordinatama.jpg" width="100%" alt="Цртеж са обарањем ивица">
+                      </div>
+                      <div class="tab-pane" id="simulacija_zadatka_chf" role="tabpanel" aria-labelledby="simulacija_zadatka_chf-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/nRQVCt0uuWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="busenje">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_busenje" aria-expanded="true" aria-controls="collapse_busenje">
+                    Бушење
+                  </button>
+                </h2>
+                <div id="collapse_busenje" class="accordion-collapse collapse" aria-labelledby="busenje" data-bs-parent="#cartesian_coordinates">
+                  <div class="accordion-body">
+                    <ul class="nav nav-tabs" id="busenje_tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="zadatak_busenje-tab" data-bs-toggle="tab" data-bs-target="#zadatak_busenje" type="button" role="tab" aria-controls="zadatak_busenje" aria-selected="true">Задатак</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="crtez_zadatka_busenja-tab" data-bs-toggle="tab" data-bs-target="#crtez_zadatka_busenja" type="button" role="tab" aria-controls="crtez_zadatka_busenja" aria-selected="true">Цртеж</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="simulacija_zadatka_busenja-tab" data-bs-toggle="tab" data-bs-target="#simulacija_zadatka_busenja" type="button" role="tab" aria-controls="simulacija_zadatka_busenja" aria-selected="true">Симулација програма</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="busenje_TabContent">
+                      <div class="tab-pane show active" id="zadatak_busenje" role="tabpanel" aria-labelledby="zadatak_busenje-tab">
+                        <img src="Pictures/Drilling.jpg" width="100%" alt="Поставка задатка">
+                      </div>
+                      <div class="tab-pane" id="crtez_zadatka_busenja" role="tabpanel" aria-labelledby="crtez_zadatka_busenja-tab">
+                        <img src="Pictures/Crtezi/Drilling.jpg" width="100%" alt="Цртеж са рупама">
+                      </div>
+                      <div class="tab-pane" id="simulacija_zadatka_busenja" role="tabpanel" aria-labelledby="simulacija_zadatka_busenja-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/brxKY94J1JA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="download">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_download" aria-expanded="true" aria-controls="collapse_download">
+                    Download...
+                  </button>
+                </h2>
+                <div id="collapse_download" class="accordion-collapse collapse" aria-labelledby="download" data-bs-parent="#cartesian_coordinates">
+                  <div class="accordion-body">
+                    <p>
+                      <a href="https://content.heidenhain.de/doku/tnc_guide/pdf_files/TNC640/34059x-07/diniso/892909-25.pdf">"PDF" документ, ISO програмирање TNC 640 - download</a>
+                    </p>
+                    <p>
+                      <a href="https://content.heidenhain.de/doku/tnc_guide/pdf_files/TNC640/34059x-06/zyklen/892905-24.pdf">"PDF" документ, програмирање циклуса TNC 640 - download</a>
+                    </p>
+                    <p>
+                      <a href="https://download.freedownloadmanager.org/Windows-PC/TNC640-Programming-Station/FREE-8.2.0.html?fbclid=IwAR2JeUj-D_t3sIX5LfCj54qJL1noRHghRBgUQ4z8XGcJekuF5Jy73i7yUSY">TNC 640 програм - download</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <nav class="card-header" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">&copy; Slobodan Ivković</li>
+                  <li class="breadcrumb-item"><a href="https://www.linkedin.com/in/slobodan-ivkovic-a08326ba"><img src="Pictures/Icons/linkedin.png" alt="linkedin logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://twitter.com/slobodan_iv"><img src="Pictures/Icons/twitter.png" alt="twitter logo"></a></li>
+                  <li class="breadcrumb-item"><a href="https://www.youtube.com/user/Mickijedini"><img src="Pictures/Icons/youtube.png" alt="youtube logo"></a></li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- container -->
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>-->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
